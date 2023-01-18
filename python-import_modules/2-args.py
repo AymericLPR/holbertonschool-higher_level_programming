@@ -5,7 +5,7 @@ if __name__ == "__main__":
     if n_arg == 1:
         print("1 arguments:")
         print("1: {}".format(sys.argv[i])
-    if n_arg > 0:
+    if n_arg > 1:
         print("{} arguments:".format((n_arg)))
         for i in range(1, n_arg + 1):
             print("{}: {}".format(i, sys.argv[i]))
