@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import hidden_4
     word = dir(hidden_4)
-    for i in range(word):
-        if word[0] == "_":
+    for i in range(len(word)):
+        if word[i][0] == "_":
             continue
-        print("{}".format(word))
+        print("{}".format(word[i]))
