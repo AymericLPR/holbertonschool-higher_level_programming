@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-""" This is a file of a empty class square """
+""" This is a empty file """
 
 
 class Square:
+
     """Empty class"""
     def __init__(self, size=0):
-        """initialisation of values"""
+        """initialisation of the size, with some constraint"""
+        self.__size = size
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        elif size < 0:
+        if size < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
 
-        def area(self):
-            """ Return square area """
-            return self.__size * self.__size
+    def area(self):
+        """return the square area"""
+        return (self.__size)**2
