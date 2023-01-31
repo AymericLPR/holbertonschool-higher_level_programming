@@ -9,7 +9,7 @@ class Square():
         """ constructor method """
         self.__size = size
         self.position = position
-        
+
     @property
     def size(self):
         return (self.__size)
@@ -39,7 +39,7 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
-            
+
     def area(self):
         """return the square area"""
         return (self.__size)**2
