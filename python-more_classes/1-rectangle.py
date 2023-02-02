@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" This module is the first creation of empty rectangle class """
+""" This module is a first creation of empty class for a rectangle """
 
 
 class Rectangle():
 
-        """Empty rectangle class"""
-        def __init__(self, width=0, height=0):
+    """Rectangle class"""
+    def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
 
