@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Doc """
 
+
 def add_integer(a, b=98):
     """ Doc """
     if a is None or (type(a) is not int and type(a) is not float):
