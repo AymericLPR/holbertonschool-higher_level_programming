@@ -6,7 +6,7 @@ class Rectangle {
       this.height = h;
     }
   }
-  
+
   print () {
     let line = '';
     for (let printj = 0; printj < this.width; printj++) {
@@ -16,5 +16,5 @@ class Rectangle {
       console.log(line);
     }
   }
-} 
+}
 module.exports = Rectangle;
