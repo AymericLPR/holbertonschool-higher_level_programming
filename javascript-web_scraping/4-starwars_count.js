@@ -2,15 +2,26 @@
 
 const request = require('request');
 
-const movieId = process.argv[2];
+const apiUrl = process.argv[2];
 
-request(`https://swapi-api.hbtn.io/api/films/${movieId}`, function (error, response, body) {
+request(apiUrl, function (error, response, body) {
   if (error) {
     console.error(error);
     return;
   }
 
-  const movie = JSON.parse(body);
+  const movies = JSON.parse(body).results;
 
-  console.log(movie.title);
+  let count = 0;
+  for (const movie of movies) {
+    for (const character of movie.characters) {
+      if (character.includes('18')) {
+        count++;
+        break;
+      }
+    }
+  }
+
+  // Print the count
+  console.log(count);
 });
